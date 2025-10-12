@@ -74,7 +74,7 @@
   flex-wrap: wrap;
   width: 360px;
   gap: 12px;
-  margin-bottom: 32px;
+  padding-bottom: 50px;
 }
 
 .option {

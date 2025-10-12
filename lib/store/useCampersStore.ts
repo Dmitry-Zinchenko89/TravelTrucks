@@ -33,7 +33,6 @@ export const useCampersStore = create<CampersState>((set, get) => ({
         });
 
         const { data } = await axios.get(`${API_URL}/campers?${params.toString()}`);
-        console.log(`${API_URL}/campers?${params.toString()}`);
         set({ campers: data });
     },
 }));
