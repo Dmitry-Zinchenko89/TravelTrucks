@@ -1,0 +1,154 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    border: 1px solid var(--gray-light);
+    border-radius: 20px;
+    padding: 24px;
+    width: 888px;
+    height: 368px;
+    background: var(--white);
+}
+
+.imageWrapper {
+    position: relative;
+    width: 292px;
+    height: 320px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: cover;
+ 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.headerGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 524px;
+    height: 32px;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: var(--main);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.price {
+    display: flex;
+    align-content: center;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133%;
+    color: var(--main);
+    gap: 8px;
+   
+}
+
+.meta {
+    display: flex;
+    gap: 16px;
+}
+
+.spanRating {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--main);
+}
+
+.spanMeta {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--text);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 525px;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--main);
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 100px;
+    padding: 12px 18px;
+    width: 143px;
+    height: 48px;
+    background: var(--badges);
+    mix-blend-mode: multiply; 
+}
+
+.btn {
+    text-align: center;
+    border-radius: 200px;
+    padding: 16px;
+    width: 166px;
+    height: 56px;
+    background: var(--button);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: var(--white);
+    
+}
+
+.btn:hover {
+    background: var(--button-hover);
+}

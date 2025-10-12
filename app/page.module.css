@@ -1,0 +1,39 @@
+.heroContainer {
+  position: absolute;
+  top: 50%;
+  left: 64px; 
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 2;
+    
+}
+
+.heroContainer h2 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 67%;
+  color: var(--inputs);
+  margin-bottom: 16px;
+}
+
+.heroContainer p {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--inputs);
+  margin-bottom: 40px;
+}
+
+.btn {
+  border-radius: 200px;
+  padding: 16px 60px;
+  width: 173px;
+  height: 56px;
+  background: var(--button);
+}
+
+.btn:hover {
+  background: var(--button-hover);
+}

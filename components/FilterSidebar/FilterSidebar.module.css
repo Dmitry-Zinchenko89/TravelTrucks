@@ -1,0 +1,136 @@
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray);
+}
+
+.inputWrapper{
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  padding: 18px 218px 18px 20px;
+  width: 360px;
+  height: 56px;
+  background: var(--inputs);
+  margin-bottom: 40px;
+}
+
+.iconLocation {
+  margin-right: 8px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--main);
+}
+ 
+.input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray);
+}
+  
+.blockEquipment{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subtitle {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--text);
+  margin-bottom: 32px;
+}
+
+.sectionTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main);
+}
+
+.optionsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  width: 112px;
+  height: 96px;
+  gap: 8px;
+  mix-blend-mode: multiply;
+  border: 1px solid var(--gray-light);
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f9f9f9;
+}
+
+.active {
+  border: 1px solid var(--button);
+}
+
+.blockType {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.span{
+  text-align: center;
+  width: 80px;
+  height: 48px;
+}
+
+.button {
+  border-radius: 200px;
+  width: 166px;
+  height: 56px;
+  background: var(--button);
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--white);
+}
+
+.button:hover {
+  background: var(--button-hover);
+}

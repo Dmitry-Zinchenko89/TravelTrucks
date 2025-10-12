@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  height: 72px; 
+  border-bottom: 1px solid var(--badges);
+  background: var(--inputs);
+  position: relative;
+  z-index: 2;
+  padding: 0 64px; 
+}
+
+.logo {
+  position: absolute;
+  left: 64px;
+}
+
+.span{
+  color: #475467;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.navList a {
+ font-family: var(--font-family);
+ font-weight: 500;
+ font-size: 16px;
+ line-height: 150%;
+ text-align: center;
+ color: var(--main);
+ text-decoration: none;
+ transition: color 0.3s;
+}
+
+.active:hover{
+  color: var(--button-hover);
+}
