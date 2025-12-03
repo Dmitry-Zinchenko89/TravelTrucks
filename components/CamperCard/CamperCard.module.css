@@ -21,6 +21,7 @@
 
 .image {
     object-fit: cover;
+   
  
 }
 
@@ -66,7 +67,12 @@
     line-height: 133%;
     color: var(--main);
     gap: 8px;
-   
+}
+
+.heartBtn {
+  background: none;
+  border: none;
+ 
 }
 
 .meta {

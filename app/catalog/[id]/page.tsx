@@ -62,7 +62,6 @@ const CamperDetailsPage = async ({ params }: CamperPageProps) => {
 
             <div className={styles.content}>
 
-                {/* <Features camper={camper} /> */}
 
 
                 <BookingForm />

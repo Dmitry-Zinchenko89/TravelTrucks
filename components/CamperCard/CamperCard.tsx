@@ -2,11 +2,13 @@ import Link from "next/link";
 import type { Camper } from "@/types/campers";
 import styles from "./CamperCard.module.css";
 import Image from "next/image";
+import { useState } from "react";
 
 
 const formatPrice = (n: number) => `€${n.toFixed(2)}`;
 
 export default function CamperCard({ camper }: { camper: Camper }) {
+    const [favorite, setFavorite] = useState(false);
     const reviewsCount = camper.reviews?.length ?? 0;
 
     return (
@@ -25,12 +27,14 @@ export default function CamperCard({ camper }: { camper: Camper }) {
                     <header className={styles.top}>
                         <h3 className={styles.title}>{camper.name}</h3>
                         <span className={styles.price}>{formatPrice(camper.price)}
-                            <Image
-                                src="/heart.svg"
-                                alt="map icon"
-                                width={26}
-                                height={24}
-                            />
+                            <button className={styles.heartBtn} onClick={() => setFavorite(!favorite)}>
+                                <Image
+                                    src={favorite ? "/heart-red.svg" : "/heart.svg"}
+                                    alt="favorite"
+                                    width={26}
+                                    height={24}
+                                />
+                            </button>
                         </span>
                     </header>
 
