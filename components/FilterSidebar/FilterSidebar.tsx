@@ -124,57 +124,45 @@ export const FilterSidebar = () => {
                     height={2}
                     className={styles.icon} />
                 <div className={styles.optionsGrid}>
-                    <label className={styles.option}>
+                    <label
+                        className={`${styles.option} ${filters.form === "van" ? styles.active : ""}`}
+                        onClick={() => setFilter("form", filters.form === "van" ? "" : "van")
+                        }
+                    >
                         <Image
                             src="/bi_grid-1x2.svg"
                             alt="map icon"
                             width={32}
                             height={32}
                             className={styles.icon} />
-                        <input
-                            type="radio"
-                            name="form"
-                            value="van"
-                            checked={filters.form === "van"}
-                            onChange={(event) => setFilter("form", event.target.value)}
-                            className={styles.radio}
-                        />
                         <span>Van</span>
                     </label>
 
-                    <label className={styles.option}>
+                    <label
+                        className={`${styles.option} ${filters.form === "fullyIntegrated" ? styles.active : ""}`}
+                        onClick={() => setFilter("form", filters.form === "fullyIntegrated" ? "" : "fullyIntegrated")
+                        }
+                    >
                         <Image
                             src="/bi_grid.svg"
                             alt="map icon"
                             width={32}
                             height={32}
                             className={styles.icon} />
-                        <input
-                            type="radio"
-                            name="form"
-                            value="fullyIntegrated"
-                            checked={filters.form === "fullyIntegrated"}
-                            onChange={(event) => setFilter("form", event.target.value)}
-                            className={styles.radio}
-                        />
                         <span className={styles.span}>Fully Integrated</span>
                     </label>
 
-                    <label className={styles.option}>
+                    <label
+                        className={`${styles.option} ${filters.form === "alcove" ? styles.active : ""}`}
+                        onClick={() => setFilter("form", filters.form === "alcove" ? "" : "alcove")
+                        }
+                    >
                         <Image
                             src="/bi_grid-3x3-gap.svg"
                             alt="map icon"
                             width={32}
                             height={32}
                             className={styles.icon} />
-                        <input
-                            type="radio"
-                            name="form"
-                            value="alcove"
-                            checked={filters.form === "alcove"}
-                            onChange={(event) => setFilter("form", event.target.value)}
-                            className={styles.radio}
-                        />
                         <span>Alcove</span>
                     </label>
                 </div>

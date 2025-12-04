@@ -1,8 +1,13 @@
+"use client"
+
 import Link from "next/link";
 import styles from "@/components/Header/Header.module.css";
 import Image from "next/image";
+import { useState } from "react";
+
 
 const Header = () => {
+    const [active, setActive] = useState("home");
     return (
         <header className={styles.header}>
             <h1 className={styles.logo}>
@@ -17,16 +22,23 @@ const Header = () => {
             <nav>
                 <ul className={styles.navList}>
                     <li>
-                        <Link href="/" className={styles.active}>
+                        <Link href="/" className={`${styles.link} ${active === "home" ? styles.active : ""}`}
+                            onClick={() => setActive("home")}
+                        >
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link href="/catalog" className={styles.active}>Catalog</Link>
+                        <Link href="/catalog"
+                            className={`${styles.link} ${active === "catalog" ? styles.active : ""}`}
+                            onClick={() => setActive("catalog")}
+                        >
+                            Catalog
+                        </Link>
                     </li>
                 </ul>
             </nav>
-        </header>
+        </header >
     )
 };
 
