@@ -7,7 +7,7 @@ import { useState } from "react";
 
 const formatPrice = (n: number) => `€${n.toFixed(2)}`;
 
-export default function CamperCard({ camper }: { camper: Camper }) {
+export const CamperCard = ({ camper }: { camper: Camper }) => {
     const [favorite, setFavorite] = useState(false);
     const reviewsCount = camper.reviews?.length ?? 0;
 

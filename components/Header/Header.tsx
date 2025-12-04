@@ -6,7 +6,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 
-const Header = () => {
+export const Header = () => {
     const [active, setActive] = useState("home");
     return (
         <header className={styles.header}>
@@ -42,4 +42,3 @@ const Header = () => {
     )
 };
 
-export default Header;

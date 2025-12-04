@@ -6,7 +6,7 @@ interface GalleryProps {
     images: { original: string }[];
 }
 
-export default function Gallery({ images }: GalleryProps) {
+export const Gallery = ({ images }: GalleryProps) => {
     return (
         <div className={styles.gallery}>
             {images.map((img, i) => (

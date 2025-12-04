@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import CamperCard from "../CamperCard/CamperCard";
+import { CamperCard } from "../CamperCard/CamperCard";
 import { getCampers } from "@/lib/api/getCampers";
 import type { Camper } from "@/types/campers";
 import styles from "./CamperList.module.css";
@@ -60,4 +60,3 @@ export const CamperList = () => {
     );
 };
 
-export default CamperList;

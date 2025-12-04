@@ -19,15 +19,12 @@
 
 html,
 body {
-  overflow-x: hidden;
-}
-
-body {
   font-family: "Inter",  sans-serif;
   color: #1a1a1a;
   background-color: #fff;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 * {

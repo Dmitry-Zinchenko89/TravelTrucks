@@ -3,7 +3,7 @@ import styles from "@/app/page.module.css";
 import Image from "next/image";
 
 
-const Home = () => {
+export default function Home() {
   return (
     <div className={styles.wrapper}>
       <section className={styles.hero}>
@@ -25,4 +25,3 @@ const Home = () => {
     </div>
   );
 };
-export default Home;

@@ -2,7 +2,7 @@
 
 import styles from "@/app/catalog/[id]/CamperDetails.module.css";
 
-export default function Features() {
+export const Features = () => {
     return (
         <div className={styles.blockFeatures}>
 

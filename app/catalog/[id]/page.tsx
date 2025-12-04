@@ -2,14 +2,14 @@ import { getCampersById } from "@/lib/api/getCampersById";
 import styles from "@/app/catalog/[id]/CamperDetails.module.css";
 import Image from "next/image";
 // import Features from "@/components/Features/Features";
-import BookingForm from "@/components/BookingForm/BookingForm";
-import Gallery from "@/components/Gallery/Gallery";
+import { BookingForm } from "@/components/BookingForm/BookingForm";
+import { Gallery } from "@/components/Gallery/Gallery";
 
 interface CamperPageProps {
     params: { id: string };
 }
 
-const CamperDetailsPage = async ({ params }: CamperPageProps) => {
+export default async function CamperDetailsPage({ params }: CamperPageProps) {
     const camper = await getCampersById(params.id);
     const reviewsCount = camper.reviews?.length ?? 0;
 
@@ -68,6 +68,5 @@ const CamperDetailsPage = async ({ params }: CamperPageProps) => {
             </div>
         </div>
     );
-}
+};
 
-export default CamperDetailsPage;

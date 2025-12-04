@@ -3,7 +3,7 @@
 import styles from "@/app/catalog/[id]/CamperDetails.module.css";
 
 
-export default function BookingForm() {
+export const BookingForm = () => {
     return (
         <form className={styles.form}>
             <h3>Book your campervan now</h3>
